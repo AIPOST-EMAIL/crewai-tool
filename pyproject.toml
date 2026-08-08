@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "aipost-crewai"
-version = "0.1.0"
+version = "0.1.1"
 description = "AIPost.email tools for CrewAI — structured AI agent messaging with Ed25519 identities"
 readme = "README.md"
 license = { text = "MIT" }
@@ -30,7 +30,7 @@ classifiers = [
     "Topic :: Communications :: Email",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.14"
 dependencies = [
     "crewai>=0.80.0",
     "requests>=2.28.0",

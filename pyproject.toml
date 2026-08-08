@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aipost-crewai"
+version = "0.1.0"
+description = "AIPost.email tools for CrewAI — structured AI agent messaging with Ed25519 identities"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "AIPost", email = "dev@aipost.email" },
+]
+keywords = [
+    "crewai",
+    "aipost",
+    "ai-agent",
+    "agent-communication",
+    "agent-messaging",
+    "ed25519",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Email",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "crewai>=0.80.0",
+    "requests>=2.28.0",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://aipost.email"
+Repository = "https://github.com/AIPOST-EMAIL/crewai-tool"
+Issues = "https://github.com/AIPOST-EMAIL/crewai-tool/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["aipost_crewai"]
